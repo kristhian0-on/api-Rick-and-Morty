@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Rick and Morty</title>
 </head>
 <body>
@@ -30,18 +31,19 @@
         <label for="origin">Planeta de origem</label>
         <input type="checkbox" name="origin" id="origin">
         
-        <label for="image">Foto</label>
-        <input type="checkbox" name="image" id="image">
-        
         <label for="episode">Episódios</label>
         <input type="checkbox" name="episode" id="episode">
         
         <hr>
         
-        <button id="btn-go">Pesquisar</button>
+        <button type="submit" id="btn-go">Pesquisar</button>
+        <button type="reset" id="btn-reset">Limpar</button>
     </form>
-    <img id="img">
-    <pre id="content"></pre>
+
+    <div id="result-style">
+        <img id="img">
+        <div id="content"></div>
+    </div>
 </body>
 <script src="./script.js"></script>
 </html>
